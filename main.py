@@ -17,8 +17,6 @@ def loss_function(): # 손실 함수
     return tf.square(260 - predicted)      # (실제값 - 예측값)^2
 
 
-loss_function()
-
 opt = tf.keras.optimizers.Adam(learning_rate=0.1)
 
 for i in range(300):
